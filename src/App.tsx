@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import "./App.css";
+import Wordle from "./components/Wordle";
 
 interface solutionBody {
   id: number;
@@ -21,7 +22,7 @@ function App() {
     <div className="App">
       <h1>Wordle (Lingo) </h1>
 
-      {solution && <div> solution is : {solution}</div>}
+      {solution && <Wordle solution={solution} />}
     </div>
   );
 }
